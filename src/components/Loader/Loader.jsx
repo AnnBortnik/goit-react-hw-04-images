@@ -1,9 +1,7 @@
-import { Component } from 'react';
+import React from 'react';
 import { BallTriangle } from 'react-loader-spinner';
 
-
-class Loader extends Component {
-  render() {
+const Loader = () => {
     return (
       <div className="Loader">
         <BallTriangle
@@ -16,6 +14,5 @@ class Loader extends Component {
       </div>
     );
   }
-}
 
 export default Loader;

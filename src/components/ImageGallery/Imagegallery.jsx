@@ -1,11 +1,8 @@
-import { Component } from 'react';
+import React from 'react';
 import ImageGalleryItem from "components/ImageGalleryItem/Imagegalleryitem";
 import { nanoid } from 'nanoid';
 
-class ImageGallery extends Component {
-  render() {
-    const { images, onSelect } = this.props;
-
+const ImageGallery = ({images, onSelect}) => {
     return (
       <ul className="ImageGallery">
         {images.map(image => (
@@ -14,6 +11,5 @@ class ImageGallery extends Component {
       </ul>
     );
   }
-}
 
 export default ImageGallery;
